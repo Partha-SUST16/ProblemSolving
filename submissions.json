@@ -1,4 +1,21 @@
 {
+  "CF45669181": {
+    "contest_id": 1076,
+    "language": "GNU C++17",
+    "path": "codeforces\\1076\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Edge Deletion",
+    "problem_url": "https://codeforces.com/contest/1076/problem/D",
+    "submission_id": "CF45669181",
+    "submission_url": "https://codeforces.com/contest/1076/submission/45669181",
+    "tags": [
+      "graphs",
+      "greedy",
+      "shortest paths",
+      "*1800"
+    ],
+    "timestamp": "Nov/13/2018 15:29"
+  },
   "CF45704832": {
     "contest_id": 313,
     "language": "GNU C++17",
