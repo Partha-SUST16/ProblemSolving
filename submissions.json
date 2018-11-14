@@ -1,4 +1,20 @@
 {
+  "CF45704832": {
+    "contest_id": 313,
+    "language": "GNU C++17",
+    "path": "codeforces\\313\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Ilya and Bank Account",
+    "problem_url": "https://codeforces.com/contest/313/problem/A",
+    "submission_id": "CF45704832",
+    "submission_url": "https://codeforces.com/contest/313/submission/45704832",
+    "tags": [
+      "implementation",
+      "number theory",
+      "*900"
+    ],
+    "timestamp": "Nov/14/2018 17:00"
+  },
   "CF45705044": {
     "contest_id": 199,
     "language": "GNU C++17",
