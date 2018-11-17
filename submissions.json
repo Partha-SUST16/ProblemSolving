@@ -1,4 +1,19 @@
 {
+  "CF45879123": {
+    "contest_id": 1077,
+    "language": "GNU C++17",
+    "path": "codeforces\\1077\\F1.cpp",
+    "problem_index": "F1",
+    "problem_name": "Pictures with Kittens (easy version)",
+    "problem_url": "https://codeforces.com/contest/1077/problem/F1",
+    "submission_id": "CF45879123",
+    "submission_url": "https://codeforces.com/contest/1077/submission/45879123",
+    "tags": [
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Nov/17/2018 19:12"
+  },
   "CF45958174": {
     "contest_id": 1079,
     "language": "GNU C++17",
