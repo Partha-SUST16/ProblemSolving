@@ -1,4 +1,19 @@
 {
+  "CF45960715": {
+    "contest_id": 1079,
+    "language": "GNU C++17",
+    "path": "codeforces\\1079\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Playing Piano",
+    "problem_url": "https://codeforces.com/contest/1079/problem/C",
+    "submission_id": "CF45960715",
+    "submission_url": "https://codeforces.com/contest/1079/submission/45960715",
+    "tags": [
+      "dp",
+      "*1700"
+    ],
+    "timestamp": "Nov/19/2018 17:32"
+  },
   "CF45961821": {
     "contest_id": 1079,
     "language": "GNU C++17",
