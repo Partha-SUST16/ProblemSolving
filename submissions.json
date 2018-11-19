@@ -1,4 +1,18 @@
 {
+  "CF45959678": {
+    "contest_id": 1079,
+    "language": "GNU C++17",
+    "path": "codeforces\\1079\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Personalized Cup",
+    "problem_url": "https://codeforces.com/contest/1079/problem/B",
+    "submission_id": "CF45959678",
+    "submission_url": "https://codeforces.com/contest/1079/submission/45959678",
+    "tags": [
+      "*1200"
+    ],
+    "timestamp": "Nov/19/2018 17:04"
+  },
   "CF45960715": {
     "contest_id": 1079,
     "language": "GNU C++17",
