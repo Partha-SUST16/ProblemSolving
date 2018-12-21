@@ -59,47 +59,33 @@ const int mod = 1000000007;
 
 int main()
 {
-//    int n,m;
-//    cin>>n>>m;
-//    vii arr;
-//    if(n==1)
-//        return cout<<0<<endl,0;
-//    for(int i=0,x; i<n; i++)
-//        cin>>x,arr.pb(x);
-//    sort(all(arr),greater<int>());
-//
-//    ll ans = 0,prev=arr[0];
-//    for(int i=0; i<arr.size()-1; i++)
-//    {
-//        if(prev==0)
-//        {
-//            ans+=arr[i]-1;continue;
-//        }
-//        if(prev<=arr[i+1])
-//        {
-//            ans+=arr[i]-1;prev--;
-//        }
-//        else
-//        {
-//            ans+=arr[i]-(prev-arr[i+1]);
-//            prev = arr[i+1];
-//        }
-//    }
-//    ans+=min((ll)arr.back()-1,(ll)arr.back()-prev);
-//    cout<<ans<<endl;
-    ll n,m,tot=0;
+    int n,m;
     cin>>n>>m;
-    ll arr[n+5];
-    REP1(i,n)cin>>arr[i],tot+=arr[i];
-    sort(arr+1,arr+n+1);
-    ll req = 0,prev = 0;
-    REP1(i,n)
+    vii arr;
+    if(n==1)
+        return cout<<0<<endl,0;
+    for(int i=0,x; i<n; i++)
+        cin>>x,arr.pb(x);
+    sort(all(arr),greater<int>());
+
+    ll ans = 0,prev=arr[0];
+    for(int i=0; i<arr.size()-1; i++)
     {
-        req++;
-        if(arr[i]>prev)
-            prev++;
+        if(prev==0)
+        {
+            ans+=arr[i]-1;continue;
+        }
+        if(prev<=arr[i+1])
+        {
+            ans+=arr[i]-1;prev--;
+        }
+        else
+        {
+            ans+=arr[i]-(prev-arr[i+1]);
+            prev = arr[i+1];
+        }
     }
-    req+=(arr[n]-prev);
-    cout<<tot-req<<endl;
+    ans+=min((ll)arr.back()-1,(ll)arr.back()-prev);
+    cout<<ans<<endl;
     return 0;
 }
