@@ -1,4 +1,21 @@
 {
+  "CF47988136": {
+    "contest_id": 1099,
+    "language": "GNU C++17",
+    "path": "codeforces\\1099\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Squares and Segments",
+    "problem_url": "https://codeforces.com/contest/1099/problem/B",
+    "submission_id": "CF47988136",
+    "submission_url": "https://codeforces.com/contest/1099/submission/47988136",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Jan/05/2019 23:11"
+  },
   "CF47996626": {
     "contest_id": 1099,
     "language": "GNU C++17",
