@@ -1,4 +1,20 @@
 {
+  "CF48337023": {
+    "contest_id": 1100,
+    "language": "GNU C++17",
+    "path": "codeforces\\1100\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Build a Contest",
+    "problem_url": "https://codeforces.com/contest/1100/problem/B",
+    "submission_id": "CF48337023",
+    "submission_url": "https://codeforces.com/contest/1100/submission/48337023",
+    "tags": [
+      "data structures",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jan/13/2019 20:54"
+  },
   "CF48343033": {
     "contest_id": 1100,
     "language": "GNU C++17",
