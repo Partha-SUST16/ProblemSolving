@@ -1,4 +1,22 @@
 {
+  "CF48648713": {
+    "contest_id": 1105,
+    "language": "GNU C++17",
+    "path": "codeforces\\1105\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Kilani and the Game",
+    "problem_url": "https://codeforces.com/contest/1105/problem/D",
+    "submission_id": "CF48648713",
+    "submission_url": "https://codeforces.com/contest/1105/submission/48648713",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "shortest paths",
+      "*1900"
+    ],
+    "timestamp": "Jan/21/2019 01:10"
+  },
   "CF48726783": {
     "contest_id": 1104,
     "language": "GNU C++17",
