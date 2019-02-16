@@ -1,4 +1,21 @@
 {
+  "CF50000825": {
+    "contest_id": 1113,
+    "language": "GNU C++17",
+    "path": "codeforces\\1113\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Sasha and His Trip",
+    "problem_url": "https://codeforces.com/contest/1113/problem/A",
+    "submission_id": "CF50000825",
+    "submission_url": "https://codeforces.com/contest/1113/submission/50000825",
+    "tags": [
+      "dp",
+      "greedy",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Feb/16/2019 22:42"
+  },
   "CF50011053": {
     "contest_id": 1113,
     "language": "GNU C++17",
