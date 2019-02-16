@@ -1,4 +1,18 @@
 {
+  "CF50030895": {
+    "contest_id": 1113,
+    "language": "GNU C++17",
+    "path": "codeforces\\1113\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Sasha and a Bit of Relax",
+    "problem_url": "https://codeforces.com/contest/1113/problem/C",
+    "submission_id": "CF50030895",
+    "submission_url": "https://codeforces.com/contest/1113/submission/50030895",
+    "tags": [
+      "*1600"
+    ],
+    "timestamp": "Feb/17/2019 00:48"
+  },
   "CF50104935": {
     "contest_id": 1117,
     "language": "GNU C++17",
