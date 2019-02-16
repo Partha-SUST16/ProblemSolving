@@ -1,4 +1,21 @@
 {
+  "CF50021761": {
+    "contest_id": 1113,
+    "language": "GNU C++17",
+    "path": "codeforces\\1113\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Sasha and One More Name",
+    "problem_url": "https://codeforces.com/contest/1113/problem/D",
+    "submission_id": "CF50021761",
+    "submission_url": "https://codeforces.com/contest/1113/submission/50021761",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "strings",
+      "*1800"
+    ],
+    "timestamp": "Feb/16/2019 23:53"
+  },
   "CF50030895": {
     "contest_id": 1113,
     "language": "GNU C++17",
