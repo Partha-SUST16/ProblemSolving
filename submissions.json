@@ -1,4 +1,20 @@
 {
+  "CF50104935": {
+    "contest_id": 1117,
+    "language": "GNU C++17",
+    "path": "codeforces\\1117\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Best Subsegment",
+    "problem_url": "https://codeforces.com/contest/1117/problem/A",
+    "submission_id": "CF50104935",
+    "submission_url": "https://codeforces.com/contest/1117/submission/50104935",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Feb/18/2019 21:46"
+  },
   "CF50112753": {
     "contest_id": 1117,
     "language": "GNU C++17",
