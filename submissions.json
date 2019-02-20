@@ -1,4 +1,20 @@
 {
+  "CF50245902": {
+    "contest_id": 1118,
+    "language": "GNU C++17",
+    "path": "codeforces\\1118\\E.cpp",
+    "problem_index": "E",
+    "problem_name": "Yet Another Ball Problem",
+    "problem_url": "https://codeforces.com/contest/1118/problem/E",
+    "submission_id": "CF50245902",
+    "submission_url": "https://codeforces.com/contest/1118/submission/50245902",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Feb/20/2019 20:54"
+  },
   "CF50247883": {
     "contest_id": 1118,
     "language": "GNU C++17",
