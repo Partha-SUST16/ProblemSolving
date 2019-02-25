@@ -1,4 +1,19 @@
 {
+  "CF50479085": {
+    "contest_id": 1130,
+    "language": "GNU C++17",
+    "path": "codeforces\\1130\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Be Positive",
+    "problem_url": "https://codeforces.com/contest/1130/problem/A",
+    "submission_id": "CF50479085",
+    "submission_url": "https://codeforces.com/contest/1130/submission/50479085",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Feb/25/2019 13:56"
+  },
   "CF50479540": {
     "contest_id": 1130,
     "language": "GNU C++17",
