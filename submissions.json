@@ -1,4 +1,21 @@
 {
+  "CF50481512": {
+    "contest_id": 1130,
+    "language": "GNU C++17",
+    "path": "codeforces\\1130\\D2.cpp",
+    "problem_index": "D2",
+    "problem_name": "Toy Train",
+    "problem_url": "https://codeforces.com/contest/1130/problem/D2",
+    "submission_id": "CF50481512",
+    "submission_url": "https://codeforces.com/contest/1130/submission/50481512",
+    "tags": [
+      "brute force",
+      "greedy",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Feb/25/2019 15:15"
+  },
   "CF50481530": {
     "contest_id": 1130,
     "language": "GNU C++17",
