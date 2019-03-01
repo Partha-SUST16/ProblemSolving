@@ -1,4 +1,21 @@
 {
+  "CF50630563": {
+    "contest_id": 1131,
+    "language": "GNU C++17",
+    "path": "codeforces\\1131\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Birthday",
+    "problem_url": "https://codeforces.com/contest/1131/problem/C",
+    "submission_id": "CF50630563",
+    "submission_url": "https://codeforces.com/contest/1131/submission/50630563",
+    "tags": [
+      "binary search",
+      "greedy",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Mar/01/2019 14:54"
+  },
   "CF50631319": {
     "contest_id": 1131,
     "language": "GNU C++17",
