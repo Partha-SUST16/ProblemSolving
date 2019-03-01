@@ -1,4 +1,20 @@
 {
+  "CF50632071": {
+    "contest_id": 1131,
+    "language": "GNU C++17",
+    "path": "codeforces\\1131\\F.cpp",
+    "problem_index": "F",
+    "problem_name": "Asya And Kittens",
+    "problem_url": "https://codeforces.com/contest/1131/problem/F",
+    "submission_id": "CF50632071",
+    "submission_url": "https://codeforces.com/contest/1131/submission/50632071",
+    "tags": [
+      "constructive algorithms",
+      "dsu",
+      "*1700"
+    ],
+    "timestamp": "Mar/01/2019 15:39"
+  },
   "CF50744136": {
     "contest_id": 1121,
     "language": "GNU C++17",
