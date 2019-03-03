@@ -1,4 +1,20 @@
 {
+  "CF50744136": {
+    "contest_id": 1121,
+    "language": "GNU C++17",
+    "path": "codeforces\\1121\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Technogoblet of Fire",
+    "problem_url": "https://codeforces.com/contest/1121/problem/A",
+    "submission_id": "CF50744136",
+    "submission_url": "https://codeforces.com/contest/1121/submission/50744136",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Mar/03/2019 21:53"
+  },
   "CF50746025": {
     "contest_id": 1121,
     "language": "GNU C++17",
