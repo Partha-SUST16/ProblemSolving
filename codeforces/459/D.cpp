@@ -55,20 +55,7 @@ using namespace std;
 //ll flipBit(ll num, int idx) {return num ^ (1ll<<idx);}
 
 const int mod = 1000000007;
-ll qpow(ll n,ll k)
-{
-    ll ans=1;
-    assert(k>=0);
-    n%=mod;
-    while(k>0)
-    {
-        if(k&1)
-            ans=(ans*n)%mod;
-        n=(n*n)%mod;
-        k>>=1;
-    }
-    return ans%mod;
-}
+ll qpow(ll n,ll k) {ll ans=1;assert(k>=0);n%=mod;while(k>0){if(k&1) ans=(ans*n)%mod;n=(n*n)%mod;k>>=1;}return ans%mod;}
 
 deque<int>lft,rght;
 map<int,int>mp;
@@ -77,22 +64,19 @@ vii tree[1000005*4];
 
 void build(int pos,int l,int r)
 {
-    if(l>r)
-        return;
-    for(int i=l; i<=r; i++)
+    if(l>r)return;
+    for(int i=l;i<=r;i++)
         tree[pos].pb(rght[i]);
     sort(all(tree[pos]));
 
-    if(l==r)
-        return;
+    if(l==r)return;
     int mid = (l+r)>>1;
     build(2*pos,l,mid);
     build(2*pos+1,mid+1,r);
 }
 int query(int pos,int L,int R,int l,int r,int v)
 {
-    if(r<L or R<l)
-        return 0;
+   if(r<L or R<l)return 0;
 
     if(l<=L and R<=r)
     {
@@ -104,69 +88,29 @@ int query(int pos,int L,int R,int l,int r,int v)
     int b =query(2*pos+1,mid+1,R,l,r,v);
     return a+b;
 }
-int cc[1000 * 1000 + 10];
-int t[1000 * 1000 + 10];
-
-void upd(int i, int v)
-{
-    //cerr << "upd(" << i << ", " << v << ")\n";
-    while(i <= n)
-    {
-        //cerr << "i = " << i << "\n";
-        t[i] += v;
-        i += i & (-i);
-    }
-}
-
-int get(int i)
-{
-    //cerr << "get(" << i << ")\n";
-    int rs = 0;
-    while(i)
-    {
-        //cerr << "i = " << i << "\n";
-        rs += t[i];
-        i -= i & (-i);
-    }
-    return rs;
-}
 int main()
 {
     fast;
     cin >> n;
-    for(int i=1; i<=n; i++)
+    for(int i=0;i<n;i++)
         cin >> arr[i];
-//    for(int i=0;i<n;i++)
-//    {
-//        lft.pb(++mp[arr[i]]);
-////        debug(v1[i]);
-//    }
-//    mp.clear();
-//    for(int i=n-1;i>=0;i--)
-//        rght.push_front(++mp[arr[i]]);
-////    REP(i,n)cout<<v2[i]<< " ";
-//
-//    ll ans = 0;
-//    build(1,0,n-1);
-//
-//    for(int i=0;i<n-1;i++)
-//    {
-//        ans += (ll)query(1,0,n-1,i+1,n-1,lft[i]);
-//    }
-//    cout<<ans<<endl;
-    for(int i = n; i >= 1; i--)
+    for(int i=0;i<n;i++)
     {
-        cc[i] = ++mp[arr[i]];
-        upd(cc[i], +1);
+        lft.pb(++mp[arr[i]]);
+//        debug(v1[i]);
     }
     mp.clear();
-    long long rs = 0;
-    for(int i = 1; i <= n; i++)
+    for(int i=n-1;i>=0;i--)
+        rght.push_front(++mp[arr[i]]);
+//    REP(i,n)cout<<v2[i]<< " ";
+
+    ll ans = 0;
+    build(1,0,n-1);
+
+    for(int i=0;i<n-1;i++)
     {
-        mp[arr[i]]++;
-        upd(cc[i], -1);
-        rs += get(mp[arr[i]]-1);
+        ans += (ll)query(1,0,n-1,i+1,n-1,lft[i]);
     }
-    cout << rs << endl;
+    cout<<ans<<endl;
     return 0;
 }
