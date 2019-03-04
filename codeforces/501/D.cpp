@@ -1,3 +1,7 @@
+#include <ext/pb_ds/assoc_container.hpp> // Common file
+#include <ext/pb_ds/tree_policy.hpp> // Including tree_order_statistics_node_update
+#include <ext/pb_ds/detail/standard_policies.hpp>
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -31,6 +35,7 @@
 
 
 using namespace std;
+using namespace __gnu_pbds;
 
 
 // moves
@@ -55,72 +60,58 @@ using namespace std;
 //ll flipBit(ll num, int idx) {return num ^ (1ll<<idx);}
 
 const int mod = 1000000007;
+typedef tree<int, null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 ll qpow(ll n,ll k) {ll ans=1;assert(k>=0);n%=mod;while(k>0){if(k&1) ans=(ans*n)%mod;n=(n*n)%mod;k>>=1;}return ans%mod;}
 
-int n,a[200111],b[200111],c2[200111];
-class BIT
+
+vii n2d(vii arr)
 {
-	private:
-		int a[200111];
-	public:
-		void add(int i,int x)
-		{
-			while(i<=n)
-			{
-				a[i]+=x;
-				i+=i&(-i);
-			}
-		}
-		int cal(int i)
-		{
-			int ans=0;
-			while(i>0)
-			{
-				ans+=a[i];
-				i-=i&(-i);
-			}
-			return ans;
-		}
-}bit1,bit2,bit3;
-int binsearch(int x)
+    vii ans(arr.size());
+    ordered_set ost;
+    for(int i:arr)ost.insert(i);
+
+    REP(i,arr.size())
+    {
+        ans[i] = ost.order_of_key(arr[i]);
+        ost.erase(arr[i]);
+    }
+    return ans;
+}
+vii d2n(vii arr)
 {
-	int l=0,r=n-1,mid;
-	while(l<=r)
-	{
-		mid=(l+r)/2;
-		if(mid-bit3.cal(mid+1)<x)l=mid+1;else r=mid-1;
-	}
-	return l;
+    vii ans(arr.size());
+    ordered_set ost;
+    for(int i=0;i<ans.size();i++)ost.insert(i);
+
+    REP(i,arr.size())
+    {
+        auto it = ost.find_by_order(arr[i]);
+        ans[i] = *it;
+        ost.erase(it);
+    }
+    return ans;
 }
 int main()
 {
-	cin>>n;
-	for(int i=1;i<=n;i++)cin>>a[i];
-	for(int i=1;i<=n;i++)cin>>b[i];
-	for(int i=1;i<=n;i++)
-	{
-		c2[i]+=a[i]-bit1.cal(a[i]+1);
-		//debug(c2[i]);
-		bit1.add(a[i]+1,1);
-	}
-	for(int i=1;i<=n;i++)
-	{
-		c2[i]+=b[i]-bit2.cal(b[i]+1);
-		bit2.add(b[i]+1,1);
-	}
-	for(int i=n;i>=1;i--)
-	{
-		if(c2[i]>=(n-i+1))
-		{
-			c2[i-1]++;
-			c2[i]-=(n-i+1);
-		}
-	}
-	for(int i=1;i<=n;i++)
-	{
-		int tmp=binsearch(c2[i]);
-		cout<<tmp<<" ";
-		bit3.add(tmp+1,1);
-	}
-	return 0;
+    int n;cin >> n;
+    vii arr(n),brr(n);
+
+    REP(i,n)cin >> arr[i];
+    REP(i,n)cin >> brr[i];
+
+    vii da = n2d(arr);
+    vii db = n2d(brr);
+
+    int carry = 0;
+    vii dc(n);
+    for(int i=n-1;i>=0;i--)
+    {
+        dc[i] = da[i]+db[i]+carry;
+        carry = dc[i]/(n-i);
+        dc[i]%=(n-i);
+    }
+    vii ans = d2n(dc);
+    for(int i:ans)
+        cout<<i<<" ";
+    return 0;
 }

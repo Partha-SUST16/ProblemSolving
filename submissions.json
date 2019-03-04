@@ -1,4 +1,19 @@
 {
+  "CF50798176": {
+    "contest_id": 501,
+    "language": "GNU C++17",
+    "path": "codeforces\\501\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Misha and Permutations Summation",
+    "problem_url": "https://codeforces.com/contest/501/problem/D",
+    "submission_id": "CF50798176",
+    "submission_url": "https://codeforces.com/contest/501/submission/50798176",
+    "tags": [
+      "data structures",
+      "*2000"
+    ],
+    "timestamp": "Mar/05/2019 02:11"
+  },
   "CF50798299": {
     "contest_id": 501,
     "language": "GNU C++17",
