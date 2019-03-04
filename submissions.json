@@ -1,4 +1,19 @@
 {
+  "CF50783627": {
+    "contest_id": 1121,
+    "language": "GNU C++17",
+    "path": "codeforces\\1121\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "System Testing",
+    "problem_url": "https://codeforces.com/contest/1121/problem/C",
+    "submission_id": "CF50783627",
+    "submission_url": "https://codeforces.com/contest/1121/submission/50783627",
+    "tags": [
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Mar/04/2019 18:30"
+  },
   "CF50784501": {
     "contest_id": 459,
     "language": "GNU C++17",
