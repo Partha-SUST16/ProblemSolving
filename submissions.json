@@ -1,4 +1,19 @@
 {
+  "CF50808021": {
+    "contest_id": 19,
+    "language": "GNU C++17",
+    "path": "codeforces\\19\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Points",
+    "problem_url": "https://codeforces.com/contest/19/problem/D",
+    "submission_id": "CF50808021",
+    "submission_url": "https://codeforces.com/contest/19/submission/50808021",
+    "tags": [
+      "data structures",
+      "*2800"
+    ],
+    "timestamp": "Mar/05/2019 12:48"
+  },
   "CF50911856": {
     "contest_id": 1132,
     "language": "GNU C++17",
