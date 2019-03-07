@@ -1,4 +1,19 @@
 {
+  "CF50912430": {
+    "contest_id": 1132,
+    "language": "GNU C++17",
+    "path": "codeforces\\1132\\F.cpp",
+    "problem_index": "F",
+    "problem_name": "Clear the String",
+    "problem_url": "https://codeforces.com/contest/1132/problem/F",
+    "submission_id": "CF50912430",
+    "submission_url": "https://codeforces.com/contest/1132/submission/50912430",
+    "tags": [
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Mar/07/2019 09:38"
+  },
   "CF50912856": {
     "contest_id": 1132,
     "language": "GNU C++17",
