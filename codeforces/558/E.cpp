@@ -56,144 +56,42 @@ using namespace std;
 
 const int mod = 1000000007;
 ll qpow(ll n,ll k) {ll ans=1;assert(k>=0);n%=mod;while(k>0){if(k&1) ans=(ans*n)%mod;n=(n*n)%mod;k>>=1;}return ans%mod;}
-const int M = 1e5+9;
+
 vii v[28];
 string s;
-//void work1()
-//{
-//    fast;
-//    int n,q;
-//    cin >> n >> q >> s;
-//    REP(i,s.length())v[s[i]-'a'].pb(i);
-//    int l,r,k;
-//    while(q--)
-//    {
-//        cin >> l >> r >> k;
-//        --l,--r;
-//        int beg = l;
-//        if(k==1)
-//        {
-//            for(int i=0;i<27;i++)
-//            {
-//                auto low = lower_bound(all(v[i]),l)-v[i].begin();
-//                auto up = upper_bound(all(v[i]),r)-v[i].begin();
-//                for(int j=low;j<up;j++)v[i][j]=beg++;
-//            }
-//        }
-//        else
-//        {
-//            for(int i=26;i>=0;i--)
-//            {
-//                auto low = lower_bound(all(v[i]),l)-v[i].begin();
-//                auto up = upper_bound(all(v[i]),r)-v[i].begin();
-//                for(int j=low;j<up;j++)v[i][j]=beg++;
-//            }
-//        }
-//    }
-//    for(int i=0;i<27;i++)
-//        for(int x : v[i])s[x]=char('a'+i);
-//    cout<<s<<endl;
-//}
-
-int tree[M*4][28];
-int lazy[M*4];
-int arr[M*4],cnt[30];
-
-
-void build(int pos,int b,int e)
-{
-    arr[pos]=e-b+1;
-    if(b==e)
-    {
-        tree[pos][s[b]-'a'] = 1;
-        return;
-    }
-    int mid = (b+e)>>1;
-    int l = 2*pos,r=l+1;
-    build(l,b,mid);
-    build(r,mid+1,e);
-    for(int i=0;i<26;i++)
-        tree[pos][i] = tree[l][i]+tree[r][i];
-}
-void shift(int pos)
-{
-    if(lazy[pos]!=-1)
-    {
-        int l = 2*pos,r=l+1;
-        lazy[l] =lazy[pos],lazy[r]=lazy[pos];
-        for(int i=0;i<26;i++)
-            if(i==lazy[pos])tree[l][i]=arr[l],tree[r][i]=arr[r];
-            else tree[l][i] = tree[r][i] = 0;
-    }
-    lazy[pos] = -1;
-}
-void update(int pos,int b,int e,int i,int j,int ch)
-{
-    if(b>j or e<i)return;
-    if(b>=i and e<=j)
-    {
-        lazy[pos] = ch;
-        for(int k=0;k<26;k++)
-            if(k==ch)tree[pos][k] = (e-b+1);
-            else tree[pos][k] = 0;
-        return;
-    }
-    shift(pos);
-    int mid = (b+e)>>1;
-    int l = 2*pos,r=l+1;
-    update(l,b,mid,i,j,ch);
-    update(r,mid+1,e,i,j,ch);
-     for(int i=0;i<26;i++)
-        tree[pos][i] = tree[l][i]+tree[r][i];
-}
-int query(int pos,int b,int e,int i,int j,int ch)
-{
-    if(b>j or e<i) return 0;
-    if(b>=i and e<=j) return tree[pos][ch];
-    shift(pos);
-    int mid=(b+e)>>1,l=2*pos,r=l+1;
-    return query(l,b,mid,i,j,ch)+query(r,mid+1,e,i,j,ch);
-}
-void print(int pos,int b,int e)
-{
-    if(b==e)
-    {
-        for(int i=0;i<26;i++) if(tree[pos][i]==1) cout<<char('a'+i);
-        return;
-    }
-    shift(pos);
-    int mid=b+(e-b)/2,l=2*pos,r=l+1;
-    print(l,b,mid);
-    print(r,mid+1,e);
-}
 int main()
 {
-    mem(lazy,-1);
-    int l,r,type,n,q;
+    fast;
+    int n,q;
     cin >> n >> q >> s;
-    build(1,0,n-1);
+    REP(i,s.length())v[s[i]-'a'].pb(i);
+    int l,r,k;
     while(q--)
     {
-        cin >> l >> r >> type;
-        l--;r--;
-        for(int i=0;i<26;i++)cnt[i]=query(1,0,n-1,l,r,i);
-        if(type==1)
+        cin >> l >> r >> k;
+        --l,--r;
+        int beg = l;
+        if(k==1)
         {
-            int cur = l;
-            for(int i=0;i<26;i++)
+            for(int i=0;i<27;i++)
             {
-                update(1,0,n-1,cur,cur+cnt[i]-1,i);
-                cur+=cnt[i];
+                auto low = lower_bound(all(v[i]),l)-v[i].begin();
+                auto up = upper_bound(all(v[i]),r)-v[i].begin();
+                for(int j=low;j<up;j++)v[i][j]=beg++;
             }
         }
-        else{
-           int cur=r;
-            for(int i=0;i<26;i++){
-                update(1,0,n-1,cur-cnt[i]+1,cur,i);
-                cur-=cnt[i];
+        else
+        {
+            for(int i=26;i>=0;i--)
+            {
+                auto low = lower_bound(all(v[i]),l)-v[i].begin();
+                auto up = upper_bound(all(v[i]),r)-v[i].begin();
+                for(int j=low;j<up;j++)v[i][j]=beg++;
             }
         }
     }
-    print(1,0,n-1);
+    for(int i=0;i<27;i++)
+        for(int x : v[i])s[x]=char('a'+i);
+    cout<<s<<endl;
     return 0;
 }
