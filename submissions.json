@@ -1,4 +1,19 @@
 {
+  "CF51158600": {
+    "contest_id": 1133,
+    "language": "GNU C++17",
+    "path": "codeforces\\1133\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Middle of the Contest",
+    "problem_url": "https://codeforces.com/contest/1133/problem/A",
+    "submission_id": "CF51158600",
+    "submission_url": "https://codeforces.com/contest/1133/submission/51158600",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Mar/11/2019 17:18"
+  },
   "CF51159053": {
     "contest_id": 1133,
     "language": "GNU C++17",
