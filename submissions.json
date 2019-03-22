@@ -1,4 +1,20 @@
 {
+  "CF51728940": {
+    "contest_id": 1139,
+    "language": "GNU C++17",
+    "path": "codeforces\\1139\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Even Substrings",
+    "problem_url": "https://codeforces.com/contest/1139/problem/A",
+    "submission_id": "CF51728940",
+    "submission_url": "https://codeforces.com/contest/1139/submission/51728940",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Mar/23/2019 02:11"
+  },
   "CF51729252": {
     "contest_id": 1139,
     "language": "GNU C++17",
