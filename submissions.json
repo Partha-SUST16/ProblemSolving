@@ -1,4 +1,22 @@
 {
+  "CF52142342": {
+    "contest_id": 1144,
+    "language": "GNU C++17",
+    "path": "codeforces\\1144\\E.cpp",
+    "problem_index": "E",
+    "problem_name": "Median String",
+    "problem_url": "https://codeforces.com/contest/1144/problem/E",
+    "submission_id": "CF52142342",
+    "submission_url": "https://codeforces.com/contest/1144/submission/52142342",
+    "tags": [
+      "bitmasks",
+      "math",
+      "number theory",
+      "strings",
+      "*1900"
+    ],
+    "timestamp": "Apr/01/2019 13:30"
+  },
   "CF52164013": {
     "contest_id": 1145,
     "language": "GNU C++17",
