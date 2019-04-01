@@ -1,4 +1,20 @@
 {
+  "CF52140045": {
+    "contest_id": 1144,
+    "language": "GNU C++17",
+    "path": "codeforces\\1144\\G.cpp",
+    "problem_index": "G",
+    "problem_name": "Two Merged Sequences",
+    "problem_url": "https://codeforces.com/contest/1144/problem/G",
+    "submission_id": "CF52140045",
+    "submission_url": "https://codeforces.com/contest/1144/submission/52140045",
+    "tags": [
+      "dp",
+      "greedy",
+      "*2400"
+    ],
+    "timestamp": "Apr/01/2019 12:13"
+  },
   "CF52142342": {
     "contest_id": 1144,
     "language": "GNU C++17",
