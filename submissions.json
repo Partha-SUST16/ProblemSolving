@@ -1,4 +1,22 @@
 {
+  "CF52653618": {
+    "contest_id": 1119,
+    "language": "GNU C++17",
+    "path": "codeforces\\1119\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Ramesses and Corner Inversion",
+    "problem_url": "https://codeforces.com/contest/1119/problem/C",
+    "submission_id": "CF52653618",
+    "submission_url": "https://codeforces.com/contest/1119/submission/52653618",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Apr/12/2019 23:45"
+  },
   "CF52655549": {
     "contest_id": 1119,
     "language": "GNU C++17",
