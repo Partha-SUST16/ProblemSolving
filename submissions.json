@@ -1,4 +1,20 @@
 {
+  "CF52655549": {
+    "contest_id": 1119,
+    "language": "GNU C++17",
+    "path": "codeforces\\1119\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Frets On Fire",
+    "problem_url": "https://codeforces.com/contest/1119/problem/D",
+    "submission_id": "CF52655549",
+    "submission_url": "https://codeforces.com/contest/1119/submission/52655549",
+    "tags": [
+      "binary search",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Apr/13/2019 00:41"
+  },
   "CF53127996": {
     "contest_id": 1155,
     "language": "GNU C++17",
