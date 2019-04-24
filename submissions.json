@@ -1,4 +1,22 @@
 {
+  "CF53245533": {
+    "contest_id": 1152,
+    "language": "GNU C++17",
+    "path": "codeforces\\1152\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Neko Performs Cat Furrier Transform",
+    "problem_url": "https://codeforces.com/contest/1152/problem/B",
+    "submission_id": "CF53245533",
+    "submission_url": "https://codeforces.com/contest/1152/submission/53245533",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "dfs and similar",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Apr/24/2019 21:47"
+  },
   "CF54568933": {
     "contest_id": 1157,
     "language": "GNU C++17",
