@@ -1,4 +1,22 @@
 {
+  "CF54791168": {
+    "contest_id": 113,
+    "language": "GNU C++17",
+    "path": "codeforces\\113\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Petr#",
+    "problem_url": "https://codeforces.com/contest/113/problem/B",
+    "submission_id": "CF54791168",
+    "submission_url": "https://codeforces.com/contest/113/submission/54791168",
+    "tags": [
+      "brute force",
+      "data structures",
+      "hashing",
+      "strings",
+      "*2000"
+    ],
+    "timestamp": "May/29/2019 13:12"
+  },
   "CF54864765": {
     "contest_id": 1153,
     "language": "GNU C++17",
