@@ -1,4 +1,20 @@
 {
+  "CF58037319": {
+    "contest_id": 1199,
+    "language": "GNU C++17",
+    "path": "codeforces\\1199\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Water Lily",
+    "problem_url": "https://codeforces.com/contest/1199/problem/B",
+    "submission_id": "CF58037319",
+    "submission_url": "https://codeforces.com/contest/1199/submission/58037319",
+    "tags": [
+      "geometry",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jul/31/2019 00:21"
+  },
   "CF58088648": {
     "contest_id": 435,
     "language": "GNU C++17",
