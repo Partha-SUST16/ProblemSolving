@@ -1,4 +1,19 @@
 {
+  "CF58088648": {
+    "contest_id": 435,
+    "language": "GNU C++17",
+    "path": "codeforces\\435\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Pasha Maximizes",
+    "problem_url": "https://codeforces.com/contest/435/problem/B",
+    "submission_id": "CF58088648",
+    "submission_url": "https://codeforces.com/contest/435/submission/58088648",
+    "tags": [
+      "greedy",
+      "*1400"
+    ],
+    "timestamp": "Jul/31/2019 22:40"
+  },
   "CF59060029": {
     "contest_id": 1163,
     "language": "GNU C++17",
