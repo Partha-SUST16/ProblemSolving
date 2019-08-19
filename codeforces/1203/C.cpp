@@ -66,19 +66,19 @@ int main()
 {
     fast;
     int n;
-    ll x;
-    ll gcd = 0;
+    ll x = 0;
     cin >> n;
-   // gcd = x;
-    for(int i=0;i<n;i++)
-        cin >> x, gcd = gc(gcd,x);
-    int ans = 0;
-    for(ll i = 1;i*i<=gcd;i++)
-    {
-        if (gcd % i > 0) continue;
-        ++ans;
-        if (i * i < gcd) ++ans;
+    for (int i = 1; i <= n; ++i) {
+        ll y;
+        cin >> y;
+        x = gc(x, y);
     }
-    pf("%d\n",ans);
+    int ans = 0;
+    for (ll i = 1; i * i <= x; ++i) {
+        if (x % i > 0) continue;
+        ++ans;
+        if (i * i < x) ++ans;
+    }
+    printf("%d\n", ans);
     return 0;
 }
