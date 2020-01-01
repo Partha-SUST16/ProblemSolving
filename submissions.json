@@ -1,4 +1,19 @@
 {
+  "CF68049790": {
+    "contest_id": 1283,
+    "language": "GNU C++17",
+    "path": "codeforces\\1283\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Candies Division",
+    "problem_url": "https://codeforces.com/contest/1283/problem/B",
+    "submission_id": "CF68049790",
+    "submission_url": "https://codeforces.com/contest/1283/submission/68049790",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Jan/02/2020 00:13"
+  },
   "CF68092586": {
     "contest_id": 1271,
     "language": "GNU C++17",
