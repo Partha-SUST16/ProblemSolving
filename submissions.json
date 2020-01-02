@@ -1,4 +1,20 @@
 {
+  "CF68092586": {
+    "contest_id": 1271,
+    "language": "GNU C++17",
+    "path": "codeforces\\1271\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Blocks",
+    "problem_url": "https://codeforces.com/contest/1271/problem/B",
+    "submission_id": "CF68092586",
+    "submission_url": "https://codeforces.com/contest/1271/submission/68092586",
+    "tags": [
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Jan/03/2020 00:51"
+  },
   "CF68207639": {
     "contest_id": 1284,
     "language": "GNU C++17",
