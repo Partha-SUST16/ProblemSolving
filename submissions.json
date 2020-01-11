@@ -1,4 +1,21 @@
 {
+  "CF68618845": {
+    "contest_id": 1287,
+    "language": "GNU C++17",
+    "path": "codeforces\\1287\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Garland",
+    "problem_url": "https://codeforces.com/contest/1287/problem/C",
+    "submission_id": "CF68618845",
+    "submission_url": "https://codeforces.com/contest/1287/submission/68618845",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Jan/12/2020 00:36"
+  },
   "CF68819495": {
     "contest_id": 1288,
     "language": "Mono C#",
