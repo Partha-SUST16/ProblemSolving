@@ -1,4 +1,20 @@
 {
+  "CF68819495": {
+    "contest_id": 1288,
+    "language": "Mono C#",
+    "path": "codeforces\\1288\\C.cs",
+    "problem_index": "C",
+    "problem_name": "Two Arrays",
+    "problem_url": "https://codeforces.com/contest/1288/problem/C",
+    "submission_id": "CF68819495",
+    "submission_url": "https://codeforces.com/contest/1288/submission/68819495",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*1600"
+    ],
+    "timestamp": "Jan/14/2020 23:01"
+  },
   "CF69263326": {
     "contest_id": 1293,
     "language": "GNU C++17",
