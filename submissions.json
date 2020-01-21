@@ -1,4 +1,20 @@
 {
+  "CF69263326": {
+    "contest_id": 1293,
+    "language": "GNU C++17",
+    "path": "codeforces\\1293\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "NEKO's Maze Game",
+    "problem_url": "https://codeforces.com/contest/1293/problem/C",
+    "submission_id": "CF69263326",
+    "submission_url": "https://codeforces.com/contest/1293/submission/69263326",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Jan/21/2020 23:45"
+  },
   "CF73022627": {
     "contest_id": 689,
     "language": "GNU C++17",
