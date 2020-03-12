@@ -1,4 +1,21 @@
 {
+  "CF73022627": {
+    "contest_id": 689,
+    "language": "GNU C++17",
+    "path": "codeforces\\689\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Mike and Cellphone",
+    "problem_url": "https://codeforces.com/contest/689/problem/A",
+    "submission_id": "CF73022627",
+    "submission_url": "https://codeforces.com/contest/689/submission/73022627",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Mar/12/2020 18:55"
+  },
   "CF79405593": {
     "contest_id": 4,
     "language": "GNU C++17",
