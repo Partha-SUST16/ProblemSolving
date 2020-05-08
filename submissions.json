@@ -1,4 +1,19 @@
 {
+  "CF79406594": {
+    "contest_id": 1,
+    "language": "GNU C++17",
+    "path": "codeforces\\1\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Theatre Square",
+    "problem_url": "https://codeforces.com/contest/1/problem/A",
+    "submission_id": "CF79406594",
+    "submission_url": "https://codeforces.com/contest/1/submission/79406594",
+    "tags": [
+      "math",
+      "*1000"
+    ],
+    "timestamp": "May/09/2020 00:32"
+  },
   "CF79453261": {
     "contest_id": 71,
     "language": "GNU C++17",
