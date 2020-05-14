@@ -56,33 +56,51 @@ using namespace std;
 const int N = (int)2e5 + 5;
 const int mod = 1000000007;
 //ll qpow(ll n,ll k) {ll ans=1;assert(k>=0);n%=mod;while(k>0){if(k&1) ans=(ans*n)%mod;n=(n*n)%mod;k>>=1;}return ans%mod;}
+struct ico
+{
+    bool operator()(const pair<ll, pair<ll,ll>> &f, const pair<ll, pair<ll,ll>> &s)
+    {
 
+        if (f.first == s.first)
+            return f.second.first > s.second.first;
+        return f.first < s.first;
+    }
+};
 int main()
 {
-    int t;cin >> t;
+    ll t;
+    cin >> t;
     while(t--)
     {
-        int n;
+        ll n;
         cin >> n;
-        vii arr(n);
-        priority_queue<pair<int,pii>>pq;
-        pq.push({n,{0,n}});
-        int counter = 1;
-        while(!pq.empty())
+        ll arr[n];
+        mem(arr,0);
+        priority_queue<pair<ll, pair<ll,ll>>, vector<pair<ll, pair<ll,ll>>>, ico> pq;
+        pq.push({n,{0, n - 1}});
+        ll value = 1;
+        while (!pq.empty())
         {
-            int topb = -pq.top().second.first;
-            int topa = pq.top().second.second;
-           // debug(topa),debug(topb);
+            pair<ll, pair<ll,ll>> p = pq.top();
             pq.pop();
-            if(topb>=topa)continue;
-            int mid = (topa+topb+1)/2 -1;
-            arr[mid] = counter++;
-            pq.push({mid-topb,{-topb,mid}});
-            pq.push({topa-mid-1,{-mid-1,topa}});
+
+            ll first = p.second.first;
+            ll second = p.second.second;
+            ll index  = (first + second) / 2;
+            arr[index] = value;
+
+            if (first <= index - 1)
+                pq.push({index - first, {first, index - 1}});
+            if (index + 1 <= second)
+                pq.push({second - index, {index + 1, second}});
+            value++;
+
         }
-        for(auto &i:arr)
-            cout<<i<<' ';
-        cout<<endl;
+
+
+        for(ll i=0; i<n; i++)
+            cout << arr[i] << " ";
+        cout << "\n";
     }
     return 0;
 }
