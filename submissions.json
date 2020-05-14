@@ -1,4 +1,21 @@
 {
+  "CF80163194": {
+    "contest_id": 1353,
+    "language": "GNU C++17",
+    "path": "codeforces\\1353\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Most Unstable Array",
+    "problem_url": "https://codeforces.com/contest/1353/problem/A",
+    "submission_id": "CF80163194",
+    "submission_url": "https://codeforces.com/contest/1353/submission/80163194",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "May/14/2020 23:52"
+  },
   "CF80163711": {
     "contest_id": 1353,
     "language": "GNU C++17",
