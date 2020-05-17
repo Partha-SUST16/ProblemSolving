@@ -1,103 +1,108 @@
-#define _USE_MATH_DEFINES
+#pragma GCC target ("avx2")
+#pragma GCC optimization ("O3")
+#pragma GCC optimization ("unroll-loops")
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <set>
+#include <queue>
+#include <map>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <stack>
+#include <algorithm>
+#include <limits.h>
 #include <bits/stdc++.h>
-#ifdef LOC
-#include "debuglib.h"
-#else
-#define deb(...)
-#define DBP(...)
-#endif
+#define fw(x) freopen("x.txt", "w", stdout)
+#define For(i, a, b, c) for (int i = a; i < b; i += c)
+#define REP(i, n) for (int i = 0; i < n; ++i)
+#define REP1(i, n) for (int i = 1; i <= n; i++)
+#define mem(a, s) memset(a, s, sizeof a)
+#define fast                      \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(NULL)
+#define pf printf
+#define sc scanf
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define all(v) v.begin(), v.end()
+#define vii vector<int>
+#define vll vector<ll>
+#define vss vector<string>
+#define debug(x) cout << #x "=" << (x) << endl
+#define pb push_back
+
 using namespace std;
-using   ll         = long long;
-using   Vi         = vector<int>;
-using   Pii        = pair<int, int>;
-#define pb           push_back
-#define mp           make_pair
-#define x            first
-#define y            second
-#define rep(i, b, e) for (int i = (b); i < (e); i++)
-#define each(a, x)   for (auto& a : (x))
-#define all(x)       (x).begin(), (x).end()
-#define sz(x)        int((x).size())
 
-int uplg(int n) { return 32-__builtin_clz(n); }
-int uplg(ll n)  { return 64-__builtin_clzll(n); }
-void run();
+// moves
 
-int main() {
-    cin.sync_with_stdio(0); cin.tie(0);
-    cout << fixed << setprecision(18);
-    run();
-    return 0;
+//int dx[]= {0,0,1,-1};/*4 side move*/
+//int dy[]= {-1,1,0,0};/*4 side move*/
+//int dx[]= {1,1,0,-1,-1,-1,0,1};/*8 side move*/
+//int dy[]= {0,1,1,1,0,-1,-1,-1};/*8 side move*/
+//int dx[]={1,1,2,2,-1,-1,-2,-2};/*knight move*/
+//int dy[]={2,-2,1,-1,2,-2,1,-1};/*knight move*/
+
+//big_mod
+
+//ll bigmod(ll a,ll b,ll m)
+//{if(b == 0) return 1%m;ll x = bigmod(a,b/2,m);x = (x * x) % m;if(b % 2 == 1) x = (x * a)% m;return x;}
+//ll BigMod(ll B,ll P,ll M){ ll R=1%M; while(P>0) {if(P%2==1){R=(R*B)%M;}P/=2;B=(B*B)%M;} return R;} /// (B^P)%M
+
+//ll getBit(ll num, int idx) {return ((num >> idx) & 1ll) == 1ll;}
+//ll setBit1(ll num, int idx) {return num or (1ll<<idx);}
+//ll setBit0(ll num, int idx) {return num & ~(1ll<<idx);}
+//ll flipBit(ll num, int idx) {return num ^ (1ll<<idx);}
+
+const int N = 1000005;
+const int mod = 1000000007;
+//ll qpow(ll n,ll k) {ll ans=1;assert(k>=0);n%=mod;while(k>0){if(k&1) ans=(ans*n)%mod;n=(n*n)%mod;k>>=1;}return ans%mod;}
+
+int bit[N];
+void update(int pos,int value)
+{
+    while(pos<=N)
+        bit[pos] += value,pos+=(pos&(-pos));
 }
-
-struct Fenwick {
-    using T = int;
-    static const T ID = 0;
-    T f(T a, T b)  { return a+b; }
-
-    vector<T> s;
-    Fenwick(int n = 0) : s(n, ID) {}
-
-    // A[i] = f(A[i], v); time: O(lg n)
-    void modify(int i, T v) {
-        for (; i < sz(s); i |= i+1) s[i]=f(s[i],v);
-    }
-
-    // Get f(A[0], .., A[i-1]); time: O(lg n)
-    T query(int i) {
-        T v = ID;
-        for (; i > 0; i &= i-1) v = f(v, s[i-1]);
-        return v;
-    }
-
-    // Find smallest i such that
-    // f(A[0],...,A[i-1]) >= val; time: O(lg n)
-    // Prefixes must have non-descreasing values.
-    int lowerBound(T val) {
-        if (val <= ID) return 0;
-        int i = -1, mask = 1;
-        while (mask <= sz(s)) mask *= 2;
-        T off = ID;
-        while (mask /= 2) {
-            int k = mask+i;
-            if (k < sz(s)) {
-                T x = f(off, s[k]);
-                if (val > x) i=k, off=x;
+int query(int pos)
+{
+    int res = 0;
+    while(pos)
+        res+=bit[pos],pos-=(pos&(-pos));
+    return res;
+}
+int main()
+{
+    fast;
+    int n,q;
+    cin >> n >> q;
+    for(int i=0,x;i<n;i++)
+        cin >> x,update(x,1);
+    for(int i=0,x;i<q;i++)
+    {
+        cin >> x;
+        if(x<0)
+        {
+            x=-x;
+            int l = 1,r=n;
+            while(l<r)
+            {
+                int m = (l+r)/2;
+                int cur = query(m);
+                if(cur>=x)
+                    r = m;
+                else
+                    l = m+1;
             }
-        }
-        return i+2;
+            update(l,-1);
+        }else
+            update(x,1);
     }
-};
-
-void run() {
-    int n, q; cin >> n >> q;
-    Fenwick tree(n);
-
-    rep(i, 0, n) {
-        int a; cin >> a;
-        a--;
-        tree.modify(a, 1);
-    }
-
-    rep(i, 0, q) {
-        int k; cin >> k;
-        if (k >= 1) {
-            k--;
-            tree.modify(k, 1);
-        } else {
-            k = -k;
-            int j = tree.lowerBound(k);
-            tree.modify(j-1, -1);
-        }
-    }
-
-    rep(i, 0, n) {
-        int k = tree.query(i+1) - tree.query(i);
-        if (k > 0) {
-            cout << i+1 << '\n';
-            return;
-        }
-    }
-
-    cout << 0 << endl;
+    for(int i=0;i<=n;i++)
+        if(query(i)>0)
+            return cout<<i<<endl,0;
+    cout<<0<<endl;
+    return 0;
 }
