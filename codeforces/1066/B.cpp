@@ -64,7 +64,7 @@ const int mod = 1000000007;
 int arr[N];
 int main()
 {
-    fast;
+    //fast;
     int n,r;
     cin >> n >> r;
     REP1(i,n) cin >> arr[i];
