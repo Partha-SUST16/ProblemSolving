@@ -1,4 +1,20 @@
 {
+  "CF80719019": {
+    "contest_id": 1066,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1066\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Boxes Packing",
+    "problem_url": "https://codeforces.com/contest/1066/problem/D",
+    "submission_id": "CF80719019",
+    "submission_url": "https://codeforces.com/contest/1066/submission/80719019",
+    "tags": [
+      "binary search",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "May/20/2020 00:39"
+  },
   "CF80721682": {
     "contest_id": 1066,
     "language": "GNU C++17 (64)",
