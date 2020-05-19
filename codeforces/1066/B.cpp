@@ -1,8 +1,3 @@
-#pragma comment(linker, "/stack:200000000")
-#pragma GCC optimize("Ofast")
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
-#pragma GCC optimize("unroll-loops")
-
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -64,7 +59,7 @@ const int mod = 1000000007;
 int arr[N];
 int main()
 {
-    //fast;
+    fast;
     int n,r;
     cin >> n >> r;
     REP1(i,n) cin >> arr[i];
