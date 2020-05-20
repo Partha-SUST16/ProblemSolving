@@ -1,4 +1,20 @@
 {
+  "CF80800176": {
+    "contest_id": 1064,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1064\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Labyrinth",
+    "problem_url": "https://codeforces.com/contest/1064/problem/D",
+    "submission_id": "CF80800176",
+    "submission_url": "https://codeforces.com/contest/1064/submission/80800176",
+    "tags": [
+      "graphs",
+      "shortest paths",
+      "*1800"
+    ],
+    "timestamp": "May/21/2020 00:43"
+  },
   "CF80872278": {
     "contest_id": 1072,
     "language": "GNU C++17 (64)",
