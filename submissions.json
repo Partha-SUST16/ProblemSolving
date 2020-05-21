@@ -1,4 +1,20 @@
 {
+  "CF80878507": {
+    "contest_id": 1072,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1072\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Cram Time",
+    "problem_url": "https://codeforces.com/contest/1072/problem/C",
+    "submission_id": "CF80878507",
+    "submission_url": "https://codeforces.com/contest/1072/submission/80878507",
+    "tags": [
+      "greedy",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "May/22/2020 00:05"
+  },
   "CF80962331": {
     "contest_id": 1068,
     "language": "GNU C++17 (64)",
