@@ -1,7 +1,7 @@
 /*
 1
 999977 17 499998
-fuck you eps :3
+
 */
 #include <iostream>
 #include <vector>
